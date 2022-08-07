@@ -1,5 +1,6 @@
 # leetcode-tester
 算法题本地测试框架，适用 Java 语言，适用大部分 leetcode 题目，运行版本 Java8。
+
 也可以用于其他算法题，只需保证测试用例的输入格式与 leetcode 保持一致。
 
 ## 开始使用
@@ -7,6 +8,7 @@
 #### 使用构建工具，Maven / Gradle 等
 
 [maven repository]
+
 ```xml
 <dependency>
 	<groupId>org.lengyu</groupId>
@@ -28,7 +30,7 @@ public class MAINCLASS {
         // 类名和测试用例文件名，{}是通配符
         ProblemTester tester = new ProblemTester("Solution{}",
                 "data\\Solution{}.txt");
-        // 打开plus模式，影响输出，会增加方法名和运行时间
+        // 打开plus模式，输出会增加方法名和运行时间
         tester.openPlusMode();
         // 测试题目 9999，类名Solution9999，测试用例文件data/Solution9999.txt
         tester.test("9999");
@@ -51,9 +53,11 @@ data\Solution9999.txt
 运行输出
 
 ```shell
-hello world!
-hello Jack!
-hello A!
+2022-08-07 17:56:54 INFO  public java.lang.String Solution9999.hello(java.lang.String)
+Hello World!
+Hello Jack!
+Hello A!
+2022-08-07 17:56:54 INFO  time: 0.0324 ms
 ```
 
 ### 样例工程
