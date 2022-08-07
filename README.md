@@ -7,18 +7,18 @@
 ### 导入
 #### 使用构建工具，Maven / Gradle 等
 
-[maven repository]
+[Maven Central Repository]
 
 ```xml
 <dependency>
-	<groupId>org.lengyu</groupId>
+	<groupId>io.github.aa3615058</groupId>
 	<artifactId>leetcode-tester</artifactId>
 	<version>1.0</version>
 </dependency>
 ```
 
 #### 不使用构建工具
-下载 [release jar包](https://github.com/aa3615058/leetcode-tester/releases)，已包含全部依赖。或者自行下载源码使用。
+下载 Release jar 导入到项目中，或者自行下载源码添加到项目中。
 
 ### Hello-world
 
