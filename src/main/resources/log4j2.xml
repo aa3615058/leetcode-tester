@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <Property name="pattern">%d{yyyy-MM-dd HH:mm:ss} %-5level %msg%n</Property>
+    </Properties>
+    <Appenders>
+        <Console name="ConsoleA" target="SYSTEM_OUT">
+            <PatternLayout pattern="${pattern}"/>
+        </Console>
+        <Console name="ConsoleError" target="SYSTEM_ERR">
+            <PatternLayout pattern="${pattern}"/>
+        </Console>
+        <Console name="ConsoleData" target="SYSTEM_OUT">
+            <PatternLayout pattern="%msg%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="ConsoleA"/>
+        </Root>
+        <Logger name="errLogger" level="info" additivity="false">
+            <AppenderRef ref="ConsoleError"/>
+        </Logger>
+        <Logger name="infoLogger" level="info" additivity="false">
+            <AppenderRef ref="ConsoleA"/>
+        </Logger>
+        <Logger name="dataLogger" level="info" additivity="false">
+            <AppenderRef ref="ConsoleData"/>
+        </Logger>
+    </Loggers>
+</Configuration>
