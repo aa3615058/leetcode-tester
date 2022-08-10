@@ -5,9 +5,9 @@
 
 ## 开始使用
 ### 导入
-#### 使用构建工具，Maven / Gradle 等
+#### 使用构建工具，Maven / Gradle / SBT 等
 
-[Maven Central Repository]
+[Maven Central Repository Link](https://mvnrepository.com/artifact/io.github.aa3615058/leetcode-tester/1.0)
 
 ```xml
 <dependency>
@@ -18,7 +18,7 @@
 ```
 
 #### 不使用构建工具
-下载 Release jar 导入到项目中，或者自行下载源码添加到项目中。
+下载 [Release jar](https://github.com/aa3615058/leetcode-tester/releases) 导入到项目中，或者自行下载源码添加到项目中。
 
 ### Hello-world
 
